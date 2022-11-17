@@ -18,7 +18,7 @@ function calcShipping(sum, min, shipping) {
 
 if (productsSum == 0 || productsSum >= freeShippingMinSum); {
     shippingSum = 0;
-} else ((productsSum > 0) & (productsSum < freeShippingMinSum)); {
+} else ((productsSum > 0) & (productsSum < freeShippingMinSum)) {
     shippingSum = shippingPrice;
 }
     // Конец решения задания №2.1.
@@ -37,7 +37,9 @@ function calcDiscount(sum, min, discount) {
 
     if (productsSum >= discountMinSum); {    // если productsSum больше или равно discountMinSum,
     discountSum = productsSum / 100 *discountPart;    // то присвойте discountSum значение discountPart процентов от productsSum,
-} else {    // иначе присвойте discountSum значение 0
+// иначе присвойте discountSum значение 0
+
+} else {  
     discountSum = 0;
 }
     // Конец решения задания №2.2.
